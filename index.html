@@ -1,0 +1,401 @@
+<html>
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Betta Fish Sales | To Do List Penjualan Ikan Cupang</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Icon -->
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+</head>
+
+<body>
+
+<!--==================== MARQUEE ====================-->
+
+<marquee>
+🐠 Selamat Datang di Website To Do List Penjualan Ikan Cupang • Kelola Penjualan Ikan Cupang Dengan Mudah dan Cepat
+</marquee>
+
+<!--==================== HEADER ====================-->
+
+<header>
+
+    <div class="header-text">
+        <h1>BETTA FISH SALES</h1>
+        <p>Website To Do List Penjualan Ikan Cupang</p>
+    </div>
+
+    <img src="image/Logo Betta Fish.png" class="logo" alt="Logo">
+
+</header>
+
+<!--==================== NAVBAR ====================-->
+
+<nav>
+
+<a href="#" onclick="tampilSection('beranda')">
+<i class="fa-solid fa-house"></i>
+Beranda
+</a>
+
+<a href="#" onclick="tampilSection('form')">
+<i class="fa-solid fa-plus"></i>
+Tambah Penjualan
+</a>
+
+<a href="#" onclick="tampilSection('galeri')">
+<i class="fa-solid fa-fish"></i>
+Galeri Ikan
+</a>
+
+<a href="#" onclick="tampilSection('tabel')">
+<i class="fa-solid fa-table"></i>
+Data Penjualan
+</a>
+
+<a href="#" onclick="tampilSection('tentang')">
+<i class="fa-solid fa-circle-info"></i>
+Tentang
+</a>
+
+</nav>
+
+<!--================================================-->
+
+<section id="beranda">
+
+<div class="hero">
+
+<h2>🐠 Selamat Datang</h2>
+
+<p>
+
+Website ini membantu para penjual ikan cupang dalam
+mencatat seluruh transaksi penjualan, status penjualan,
+harga ikan, hingga data pembeli secara cepat dan rapi.
+
+</p>
+
+<button onclick="tampilSection('form')">
+
+Tambah Penjualan
+
+</button>
+
+</div>
+
+<div class="statistik">
+
+<div class="card">
+
+<h3>Total Ikan</h3>
+
+<p id="totalIkan">0</p>
+
+</div>
+
+<div class="card">
+
+<h3>Sudah Terjual</h3>
+
+<p id="ikanTerjual">0</p>
+
+</div>
+
+<div class="card">
+
+<h3>Belum Terjual</h3>
+
+<p id="belumTerjual">0</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!--==================== FORM ====================-->
+
+<section id="form">
+
+<h2>Form Penjualan Ikan Cupang</h2>
+
+<form id="formPenjualan">
+
+<div class="form-group">
+
+<label>Nama Ikan</label>
+
+<input
+type="text"
+id="namaIkan"
+placeholder="Contoh : Galaxy Nemo"
+required>
+
+</div>
+
+<div class="form-group">
+
+<label>Jenis Cupang</label>
+
+<select id="jenis">
+
+<option>Halfmoon</option>
+<option>Plakat</option>
+<option>Crowntail</option>
+<option>Double Tail</option>
+<option>Avatar</option>
+<option>Galaxy</option>
+<option>Hellboy</option>
+<option>Koi</option>
+<option>Dumbo Ear</option>
+
+</select>
+
+</div>
+
+<div class="form-group">
+
+<label>Harga</label>
+
+<input
+type="number"
+id="harga"
+placeholder="Masukkan Harga">
+
+</div>
+
+<div class="form-group">
+
+<label>Nama Pembeli</label>
+
+<input
+type="text"
+id="pembeli">
+
+</div>
+
+<div class="form-group">
+
+<label>Status Penjualan</label>
+
+<input
+type="radio"
+name="status"
+value="Belum Terjual"
+checked>
+
+Belum Terjual
+
+<input
+type="radio"
+name="status"
+value="Sudah Terjual">
+
+Sudah Terjual
+
+</div>
+
+<div class="form-group">
+
+<label>Catatan</label>
+
+<textarea
+id="catatan"
+rows="5"
+placeholder="Masukkan Catatan"></textarea>
+
+</div>
+
+<div class="button-group">
+
+<button type="submit">
+
+<i class="fa-solid fa-floppy-disk"></i>
+
+Simpan
+
+</button>
+
+<button type="reset">
+
+Reset
+
+</button>
+
+</div>
+
+</form>
+
+</section>
+
+<!--==================== GALERI ====================-->
+
+<section id="galeri">
+
+<h2>Galeri Ikan Cupang</h2>
+
+<div class="galeri">
+
+<img src="image/halfmoon.jpg"
+alt="Halfmoon"
+onclick="tampilkanDeskripsi('Halfmoon')">
+
+<img src="image/plakat.jpg"
+alt="Plakat"
+onclick="tampilkanDeskripsi('Plakat')">
+
+<img src="image/avatar.jpg"
+alt="Avatar"
+onclick="tampilkanDeskripsi('Avatar')">
+
+<img src="image/koi.jpg"
+alt="Koi"
+onclick="tampilkanDeskripsi('Koi')">
+
+<img src="image/galaxy.jpg"
+alt="Galaxy"
+onclick="tampilkanDeskripsi('Galaxy')">
+
+<img src="image/heloboy.jpg"
+alt="Hellboy"
+onclick="tampilkanDeskripsi('Hellboy')">
+
+<img src="image/dumbo.jpg"
+alt="Dumbo"
+onclick="tampilkanDeskripsi('Dumbo Ear')">
+
+<img src="image/crowntail.jpg"
+alt="Crowntail"
+onclick="tampilkanDeskripsi('Crowntail')">
+
+</div>
+
+</section>
+
+<!--==================== MODAL ====================-->
+
+<div class="modal" id="modalDeskripsi">
+
+<div class="modal-content">
+
+<span class="close"
+onclick="tutupDeskripsi()">
+
+&times;
+
+</span>
+
+<h3 id="judulDeskripsi"></h3>
+
+<p id="isiDeskripsi"></p>
+
+</div>
+
+</div>
+
+<!--==================== DATA ====================-->
+
+<section id="tabel">
+
+<h2>Data Penjualan</h2>
+
+<div class="aksi-data">
+
+    <button onclick="exportCSV()">
+        📥 Export Excel
+    </button>
+
+    <button onclick="cetakData()">
+        🖨 Cetak
+    </button>
+
+    <button onclick="hapusSemuaData()">
+        🗑 Hapus Semua
+    </button>
+
+</div>
+
+<table id="tabelPenjualan">
+
+<thead>
+
+<tr>
+
+<th>No</th>
+
+<th>Nama Ikan</th>
+
+<th>Jenis</th>
+
+<th>Harga</th>
+
+<th>Pembeli</th>
+
+<th>Status</th>
+
+<th>Catatan</th>
+
+<th>Aksi</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+
+</tbody>
+
+</table>
+
+</section>
+
+<!--==================== TENTANG ====================-->
+
+<section id="tentang">
+
+<h2>Tentang Website</h2>
+
+<div class="about">
+
+<p>
+
+Website ini dibuat untuk membantu peternak maupun penjual
+ikan cupang dalam mengelola data penjualan dengan lebih
+cepat, mudah, dan efisien.
+
+</p>
+
+<p>
+
+Seluruh data penjualan akan tersimpan sehingga memudahkan
+dalam melihat riwayat transaksi serta status penjualan ikan.
+
+</p>
+
+</div>
+
+</section>
+
+<!--==================== FOOTER ====================-->
+
+<footer>
+
+<p>
+
+© 2026 Betta Fish Sales By M.Adel Fazella | Website To Do List Penjualan Ikan Cupang
+
+</p>
+
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,1409 @@
+/*=====================================================
+        BETTA FISH SALES
+        STYLE.CSS
+=====================================================*/
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',Tahoma,Geneva,Verdana,sans-serif;
+}
+
+body{
+
+    background:#eef6fb;
+    color:#333;
+    line-height:1.6;
+
+}
+
+/*==========================
+MARQUEE
+==========================*/
+
+marquee{
+
+    background:#0077b6;
+    color:white;
+    padding:10px;
+    font-weight:bold;
+    font-size:15px;
+
+}
+
+/*==========================
+HEADER
+==========================*/
+
+header{
+
+    width:100%;
+
+    background:linear-gradient(135deg,#00b4d8,#0077b6);
+
+    color:white;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:30px 60px;
+
+    box-shadow:0 5px 15px rgba(0,0,0,.2);
+
+}
+
+.header-text h1{
+
+    font-size:38px;
+    letter-spacing:2px;
+
+}
+
+.header-text p{
+
+    margin-top:10px;
+    font-size:18px;
+
+}
+
+.logo{
+
+    width:110px;
+    height:110px;
+    border-radius:50%;
+    object-fit:cover;
+    background:white;
+    padding:5px;
+    box-shadow:0 5px 20px rgba(0,0,0,.3);
+
+}
+
+/*==========================
+NAVBAR
+==========================*/
+
+nav{
+
+    background:#023e8a;
+
+    display:flex;
+
+    justify-content:center;
+
+    flex-wrap:wrap;
+
+    position:sticky;
+
+    top:0;
+
+    z-index:999;
+
+}
+
+nav a{
+
+    color:white;
+
+    text-decoration:none;
+
+    padding:18px 25px;
+
+    transition:.3s;
+
+    font-weight:600;
+
+}
+
+nav a i{
+
+    margin-right:8px;
+
+}
+
+nav a:hover{
+
+    background:#00b4d8;
+
+    transform:translateY(-2px);
+
+}
+
+/*==========================
+SECTION
+==========================*/
+
+section{
+
+    display:none;
+
+    padding:40px;
+
+    animation:fade .5s;
+
+}
+
+section:first-of-type{
+
+    display:block;
+
+}
+
+@keyframes fade{
+
+    from{
+
+        opacity:0;
+        transform:translateY(20px);
+
+    }
+
+    to{
+
+        opacity:1;
+        transform:translateY(0);
+
+    }
+
+}
+
+/*==========================
+BERANDA
+==========================*/
+
+.hero{
+
+    background:white;
+
+    border-radius:20px;
+
+    padding:50px;
+
+    text-align:center;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.1);
+
+}
+
+.hero h2{
+
+    color:#0077b6;
+
+    font-size:40px;
+
+    margin-bottom:20px;
+
+}
+
+.hero p{
+
+    width:85%;
+
+    margin:auto;
+
+    font-size:18px;
+
+    margin-bottom:30px;
+
+}
+
+.hero button{
+
+    background:#0096c7;
+
+    color:white;
+
+    border:none;
+
+    padding:15px 35px;
+
+    border-radius:30px;
+
+    cursor:pointer;
+
+    font-size:18px;
+
+    transition:.3s;
+
+}
+
+.hero button:hover{
+
+    background:#023e8a;
+
+    transform:scale(1.05);
+
+}
+
+/*==========================
+STATISTIK
+==========================*/
+
+.statistik{
+
+    margin-top:40px;
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+
+    gap:25px;
+
+}
+
+.card{
+
+    background:white;
+
+    border-radius:15px;
+
+    padding:30px;
+
+    text-align:center;
+
+    box-shadow:0 5px 15px rgba(0,0,0,.12);
+
+    transition:.3s;
+
+}
+
+.card:hover{
+
+    transform:translateY(-10px);
+
+}
+
+.card h3{
+
+    color:#0077b6;
+
+    margin-bottom:15px;
+
+}
+
+.card p{
+
+    font-size:40px;
+
+    font-weight:bold;
+
+    color:#023e8a;
+
+}
+/*=====================================================
+        FORM PENJUALAN
+=====================================================*/
+
+#form{
+
+    max-width:1100px;
+    margin:auto;
+
+}
+
+#form h2{
+
+    text-align:center;
+    color:#0077b6;
+    margin-bottom:35px;
+    font-size:34px;
+
+}
+
+#formPenjualan{
+
+    background:white;
+
+    padding:40px;
+
+    border-radius:20px;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.1);
+
+}
+
+.form-group{
+
+    display:flex;
+
+    flex-direction:column;
+
+    margin-bottom:25px;
+
+}
+
+.form-group label{
+
+    font-weight:bold;
+
+    margin-bottom:10px;
+
+    color:#023e8a;
+
+    font-size:17px;
+
+}
+
+.form-group input[type=text],
+.form-group input[type=number],
+.form-group select,
+.form-group textarea{
+
+    width:100%;
+
+    padding:15px;
+
+    border:2px solid #d6e6f2;
+
+    border-radius:10px;
+
+    font-size:16px;
+
+    outline:none;
+
+    transition:.3s;
+
+    background:#fafafa;
+
+}
+
+.form-group textarea{
+
+    resize:vertical;
+
+    min-height:120px;
+
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus{
+
+    border-color:#00b4d8;
+
+    background:white;
+
+    box-shadow:0 0 8px rgba(0,180,216,.3);
+
+}
+
+/*==========================
+RADIO BUTTON
+==========================*/
+
+.form-group input[type=radio]{
+
+    margin-right:8px;
+    margin-left:15px;
+    transform:scale(1.2);
+    cursor:pointer;
+
+}
+
+.form-group input[type=radio]:first-child{
+
+    margin-left:0;
+
+}
+
+/*==========================
+BUTTON
+==========================*/
+
+.button-group{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:20px;
+
+    margin-top:30px;
+
+}
+
+.button-group button{
+
+    border:none;
+
+    padding:15px 35px;
+
+    border-radius:30px;
+
+    cursor:pointer;
+
+    font-size:17px;
+
+    font-weight:bold;
+
+    transition:.3s;
+
+}
+
+.button-group button:first-child{
+
+    background:#0096c7;
+
+    color:white;
+
+}
+
+.button-group button:first-child:hover{
+
+    background:#023e8a;
+
+    transform:translateY(-4px);
+
+}
+
+.button-group button:last-child{
+
+    background:#e63946;
+
+    color:white;
+
+}
+
+.button-group button:last-child:hover{
+
+    background:#c1121f;
+
+    transform:translateY(-4px);
+
+}
+
+.button-group i{
+
+    margin-right:8px;
+
+}
+
+/*==========================
+PLACEHOLDER
+==========================*/
+
+::placeholder{
+
+    color:#999;
+
+    font-size:15px;
+
+}
+
+/*==========================
+VALIDASI
+==========================*/
+
+input:invalid{
+
+    border-color:#e63946;
+
+}
+
+input:valid{
+
+    border-color:#2a9d8f;
+
+}
+
+/*==========================
+EFEK FORM
+==========================*/
+
+#formPenjualan:hover{
+
+    box-shadow:0 15px 35px rgba(0,0,0,.15);
+
+}
+
+/*==========================
+RESPONSIVE FORM
+==========================*/
+
+@media(max-width:768px){
+
+    #form{
+
+        padding:15px;
+
+    }
+
+    #formPenjualan{
+
+        padding:25px;
+
+    }
+
+    .button-group{
+
+        flex-direction:column;
+
+    }
+
+    .button-group button{
+
+        width:100%;
+
+    }
+
+}
+/*=====================================================
+                GALERI IKAN
+=====================================================*/
+
+#galeri{
+
+    max-width:1200px;
+    margin:auto;
+
+}
+
+#galeri h2{
+
+    text-align:center;
+    color:#0077b6;
+    margin-bottom:35px;
+    font-size:34px;
+
+}
+
+.galeri{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+
+    gap:25px;
+
+}
+
+.galeri img{
+
+    width:100%;
+
+    height:220px;
+
+    object-fit:cover;
+
+    border-radius:15px;
+
+    cursor:pointer;
+
+    transition:.4s;
+
+    box-shadow:0 8px 20px rgba(0,0,0,.15);
+
+}
+
+.galeri img:hover{
+
+    transform:scale(1.07);
+
+    box-shadow:0 15px 35px rgba(0,0,0,.25);
+
+}
+
+/*=====================================================
+                MODAL
+=====================================================*/
+
+.modal{
+
+    display:none;
+
+    position:fixed;
+
+    left:0;
+
+    top:0;
+
+    width:100%;
+
+    height:100%;
+
+    background:rgba(0,0,0,.65);
+
+    z-index:9999;
+
+}
+
+.modal-content{
+
+    background:white;
+
+    width:70%;
+
+    max-width:700px;
+
+    margin:80px auto;
+
+    padding:35px;
+
+    border-radius:20px;
+
+    animation:popup .4s;
+
+}
+
+@keyframes popup{
+
+    from{
+
+        transform:scale(.7);
+
+        opacity:0;
+
+    }
+
+    to{
+
+        transform:scale(1);
+
+        opacity:1;
+
+    }
+
+}
+
+.close{
+
+    float:right;
+
+    font-size:35px;
+
+    font-weight:bold;
+
+    cursor:pointer;
+
+    color:#666;
+
+    transition:.3s;
+
+}
+
+.close:hover{
+
+    color:red;
+
+}
+
+#judulDeskripsi{
+
+    color:#0077b6;
+
+    margin-bottom:20px;
+
+}
+
+#isiDeskripsi{
+
+    line-height:1.8;
+
+    font-size:17px;
+
+}
+
+/*=====================================================
+                TABEL
+=====================================================*/
+
+#tabel{
+
+    max-width:1300px;
+
+    margin:auto;
+
+}
+
+#tabel h2{
+
+    text-align:center;
+
+    color:#0077b6;
+
+    margin-bottom:35px;
+
+    font-size:34px;
+
+}
+
+table{
+
+    width:100%;
+
+    border-collapse:collapse;
+
+    background:white;
+
+    border-radius:15px;
+
+    overflow:hidden;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.1);
+
+}
+
+thead{
+
+    background:#0077b6;
+
+    color:white;
+
+}
+
+th{
+
+    padding:18px;
+
+    font-size:16px;
+
+}
+
+td{
+
+    padding:16px;
+
+    text-align:center;
+
+    border-bottom:1px solid #ddd;
+
+}
+
+tbody tr{
+
+    transition:.3s;
+
+}
+
+tbody tr:hover{
+
+    background:#eef8ff;
+
+}
+
+/* Tombol Aksi */
+
+.editBtn{
+
+    background:#f4a261;
+
+    color:white;
+
+    border:none;
+
+    padding:8px 15px;
+
+    border-radius:8px;
+
+    cursor:pointer;
+
+    margin-right:5px;
+
+    transition:.3s;
+
+}
+
+.editBtn:hover{
+
+    background:#e76f51;
+
+}
+
+.deleteBtn{
+
+    background:#e63946;
+
+    color:white;
+
+    border:none;
+
+    padding:8px 15px;
+
+    border-radius:8px;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.deleteBtn:hover{
+
+    background:#b5172d;
+
+}
+
+/*=====================================================
+                TENTANG
+=====================================================*/
+
+#tentang{
+
+    max-width:1100px;
+
+    margin:auto;
+
+}
+
+#tentang h2{
+
+    text-align:center;
+
+    color:#0077b6;
+
+    margin-bottom:35px;
+
+    font-size:34px;
+
+}
+
+.about{
+
+    background:white;
+
+    padding:40px;
+
+    border-radius:20px;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.12);
+
+}
+
+.about p{
+
+    font-size:18px;
+
+    line-height:1.9;
+
+    text-align:justify;
+
+    margin-bottom:20px;
+
+}
+
+/*=====================================================
+                FOOTER
+=====================================================*/
+
+footer{
+
+    background:#023e8a;
+
+    color:white;
+
+    text-align:center;
+
+    padding:25px;
+
+    margin-top:60px;
+
+    font-size:16px;
+
+}
+
+footer p{
+
+    letter-spacing:1px;
+
+}
+/*=====================================================
+            BAGIAN 2.4
+            RESPONSIVE & FINISHING
+=====================================================*/
+
+/*==============================
+SCROLLBAR
+==============================*/
+
+::-webkit-scrollbar{
+
+    width:10px;
+
+}
+
+::-webkit-scrollbar-track{
+
+    background:#d9edf7;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+    background:#0077b6;
+
+    border-radius:20px;
+
+}
+
+::-webkit-scrollbar-thumb:hover{
+
+    background:#023e8a;
+
+}
+
+/*==============================
+SMOOTH SCROLL
+==============================*/
+
+html{
+
+    scroll-behavior:smooth;
+
+}
+
+/*==============================
+EFEK CARD
+==============================*/
+
+.card,
+.hero,
+.about,
+#formPenjualan,
+table,
+.modal-content{
+
+    transition:.35s;
+
+}
+
+.card:hover,
+.hero:hover,
+.about:hover,
+#formPenjualan:hover{
+
+    transform:translateY(-5px);
+
+}
+
+/*==============================
+BUTTON ANIMATION
+==============================*/
+
+button{
+
+    transition:.3s;
+
+}
+
+button:active{
+
+    transform:scale(.96);
+
+}
+
+/*==============================
+TABLE ANIMATION
+==============================*/
+
+tbody tr{
+
+    transition:.3s;
+
+}
+
+tbody tr:hover{
+
+    transform:scale(1.01);
+
+}
+
+/*==============================
+INPUT ANIMATION
+==============================*/
+
+input,
+select,
+textarea{
+
+    transition:.3s;
+
+}
+
+input:hover,
+select:hover,
+textarea:hover{
+
+    border-color:#00b4d8;
+
+}
+
+/*==============================
+IMAGE ANIMATION
+==============================*/
+
+.galeri img{
+
+    transition:.4s;
+
+}
+
+.galeri img:hover{
+
+    filter:brightness(110%);
+
+}
+
+/*==============================
+LINK
+==============================*/
+
+a{
+
+    transition:.3s;
+
+}
+
+/*==============================
+SHADOW
+==============================*/
+
+header{
+
+    box-shadow:0 5px 20px rgba(0,0,0,.25);
+
+}
+
+nav{
+
+    box-shadow:0 3px 10px rgba(0,0,0,.2);
+
+}
+
+footer{
+
+    box-shadow:0 -5px 20px rgba(0,0,0,.2);
+
+}
+
+/*==============================
+RESPONSIVE
+==============================*/
+
+@media(max-width:1024px){
+
+header{
+
+    padding:25px;
+
+}
+
+.hero{
+
+    padding:35px;
+
+}
+
+.hero h2{
+
+    font-size:32px;
+
+}
+
+.header-text h1{
+
+    font-size:30px;
+
+}
+
+.logo{
+
+    width:90px;
+    height:90px;
+
+}
+
+}
+
+/*==============================*/
+
+@media(max-width:768px){
+
+header{
+
+    flex-direction:column;
+
+    text-align:center;
+
+}
+
+.header-text{
+
+    margin-bottom:20px;
+
+}
+
+nav{
+
+    flex-direction:column;
+
+}
+
+nav a{
+
+    width:100%;
+
+    text-align:center;
+
+    border-bottom:1px solid rgba(255,255,255,.15);
+
+}
+
+.hero{
+
+    padding:25px;
+
+}
+
+.hero h2{
+
+    font-size:28px;
+
+}
+
+.hero p{
+
+    width:100%;
+
+    font-size:16px;
+
+}
+
+.statistik{
+
+    grid-template-columns:1fr;
+
+}
+
+.galeri{
+
+    grid-template-columns:repeat(2,1fr);
+
+}
+
+.modal-content{
+
+    width:90%;
+
+}
+
+table{
+
+    display:block;
+
+    overflow-x:auto;
+
+}
+
+}
+
+/*==============================*/
+
+@media(max-width:576px){
+
+marquee{
+
+    font-size:13px;
+
+}
+
+.header-text h1{
+
+    font-size:24px;
+
+}
+
+.header-text p{
+
+    font-size:15px;
+
+}
+
+.logo{
+
+    width:75px;
+
+    height:75px;
+
+}
+
+section{
+
+    padding:20px;
+
+}
+
+.hero{
+
+    padding:20px;
+
+}
+
+.hero h2{
+
+    font-size:24px;
+
+}
+
+.card{
+
+    padding:20px;
+
+}
+
+.card p{
+
+    font-size:30px;
+
+}
+
+#formPenjualan{
+
+    padding:20px;
+
+}
+
+.form-group label{
+
+    font-size:15px;
+
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea{
+
+    font-size:15px;
+
+    padding:12px;
+
+}
+
+.button-group{
+
+    flex-direction:column;
+
+}
+
+.button-group button{
+
+    width:100%;
+
+}
+
+.galeri{
+
+    grid-template-columns:1fr;
+
+}
+
+.galeri img{
+
+    height:220px;
+
+}
+
+.about{
+
+    padding:20px;
+
+}
+
+.about p{
+
+    font-size:16px;
+
+}
+
+footer{
+
+    font-size:14px;
+
+}
+
+}
+
+/*==============================
+LOADING EFFECT
+==============================*/
+
+.fade{
+
+    animation:fadeIn .5s;
+
+}
+
+@keyframes fadeIn{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(15px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+/*==============================
+SELECTION COLOR
+==============================*/
+
+::selection{
+
+    background:#00b4d8;
+
+    color:white;
+
+}
+/*==========================
+AKSI DATA
+==========================*/
+
+.aksi-data{
+
+    margin-bottom:20px;
+
+    display:flex;
+
+    gap:15px;
+
+    flex-wrap:wrap;
+
+}
+
+.aksi-data button{
+
+    background:#0077b6;
+
+    color:white;
+
+    border:none;
+
+    padding:12px 20px;
+
+    border-radius:8px;
+
+    cursor:pointer;
+
+    font-weight:bold;
+
+    transition:.3s;
+
+}
+
+.aksi-data button:hover{
+
+    background:#023e8a;
+
+}
